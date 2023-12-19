@@ -28,6 +28,13 @@ export default defineConfig({
           }
         ]
       },
+
+      workbox: {
+        // clientsClaim: true,
+        // skipWaiting: true,
+        // strategies: 'cacheFirst',
+        globPatterns: ['**/*.{html,js,css,png,jpg,gif,svg}'],
+      },
     })
   ]
 })
